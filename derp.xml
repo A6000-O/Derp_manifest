@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- DerpROM-->
+  <project path="build/make" name="DerpRom/platform_build" groups="pdk" remote="github" revision="oreo" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="DerpRom/platform_build_soong" groups="pdk,tradefed" remote="github" revision="oreo" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="bionic" name="DerpRom/bionic" groups="pdk" remote="github" revision="oreo" />
+  <project path="bootable/recovery" name="DerpRom/bootable_recovery" groups="pdk" remote="github" revision="oreo" />
+  <project path="build/kati" name="DerpRom/build_kati" groups="pdk,tradefed" remote="github" revision="oreo" />
+  <project path="device/qcom/sepolicy" name="DerpRom/device_qcom_sepolicy" remote="github" revision="oreo" />
+  <project path="external/connectivity" name="DerpRom/external_connectivity" remote="github" revision="oreo" />
+  <project path="external/selinux" name="DerpRom/external_selinux" groups="pdk" remote="github" revision="oreo" />
+  <project path="external/skia" name="DerpRom/external_skia" groups="pdk,qcom_msm8x26" remote="github" revision="oreo" />
+  <project path="external/stlport" name="DerpRom/external_stlport" groups="pdk,qcom_msm8x26" remote="github" revision="oreo" />
+  <project path="external/tinycompress" name="DerpRom/external_tinycompress" groups="pdk" remote="github" revision="oreo" />
+  <project path="frameworks/av" name="DerpRom/frameworks_av" groups="pdk" remote="github" revision="oreo" />
+  <project path="frameworks/base" name="DerpRom/frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github" revision="oreo" />
+  <project path="frameworks/native" name="DerpRom/frameworks_native" groups="pdk" remote="github" revision="oreo" />
+  <project path="frameworks/opt/telephony" name="DerpRom/frameworks_opt_telephony" groups="pdk" remote="github" revision="oreo" />
+  <project path="system/bt" name="DerpRom/system_bt" groups="pdk" remote="github" revision="oreo" />
+  <project path="system/core" name="DerpRom/system_core" groups="pdk" remote="github" revision="oreo" />
+  <project path="system/extras" name="DerpRom/system_extras" groups="pdk" remote="github" revision="oreo" />
+  <project path="system/media" name="DerpRom/system_media" groups="pdk" remote="github" revision="oreo" />
+  <project path="system/nfc" name="DerpRom/system_nfc" groups="pdk" remote="github" revision="oreo" />
+  <project path="system/qcom" name="DerpRom/system_qcom" remote="github" revision="oreo" />
+  <project path="system/sepolicy" name="DerpRom/system_sepolicy" groups="pdk" remote="github" revision="oreo" />
+  <project path="system/vold" name="DerpRom/system_vold" groups="pdk" remote="github" revision="oreo" />
+  <project path="packages/apps/CarrierConfig" name="DerpRom/packages_apps_CarrierConfig" groups="pdk-fs" remote="github" revision="oreo" />
+  <project path="packages/apps/DeskClock" name="DerpRom/packages_apps_DeskClock" groups="pdk-fs" remote="github" revision="oreo" />
+  <project path="packages/apps/Jelly" name="DerpRom/packages_apps_Jelly" groups="pdk-fs" remote="github" revision="oreo" />
+  <project path="packages/apps/Launcher3" name="DerpRom/packages_apps_Launcher3" groups="pdk-fs" remote="github" revision="oreo" />
+  <project path="packages/apps/Nfc" name="DerpRom/packages_apps_Nfc" groups="apps_nfc,pdk-fs" remote="github" revision="oreo" />
+  <project path="packages/apps/Settings" name="DerpRom/packages_apps_Settings" groups="pdk-fs" remote="github" revision="oreo" />
+  <project path="packages/inputmethods/LatinIME" name="DerpRom/packages_inputmethods_LatinIME" groups="pdk-fs" remote="github" revision="oreo" />
+  <project path="packages/providers/MediaProvider" name="DerpRom/packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="github" revision="oreo" />
+  <project path="packages/services/Telecomm" name="DerpRom/packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="github" revision="oreo" />
+  <project path="vendor/aosp" name="DerpRom/vendor_aosp" remote="github" revision="oreo" />
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="DerpRom_vendor_qcom_opensource_cryptfs_hw" remote="github" revision="oreo" />
+ <!--hals-->
+  <project path="hardware/interfaces" name="DerpRom/hardware_interfaces" groups="pdk" remote="github" revision="oreo" />
+  <project path="hardware/libhardware" name="DerpRom/hardware_libhardware" groups="pdk" remote="github" revision="oreo" />
+  <project path="hardware/libhardware_legacy" name="DerpRom/hardware_libhardware_legacy" groups="pdk" remote="github" revision="oreo" />
+  <project path="hardware/qcom/audio" name="DerpRom/hardware_qcom_audio" groups="qcom,qcom_audio" remote="github" revision="oreo" />
+  <project path="hardware/qcom/audio-caf" name="DerpRom/hardware_qcom_audio-caf" groups="qcom,qcom_audio" remote="github" revision="oreo-caf" />
+  <project path="hardware/qcom/display" name="DerpRom/hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="github" revision="oreo" />
+  <project path="hardware/qcom/display-caf" name="DerpRom/hardware_qcom_display-caf" groups="pdk,qcom,qcom_display" remote="github" revision="oreo" />
+  <project path="hardware/qcom/gps" name="DerpRom/hardware_qcom_gps" groups="pdk,qcom,qcom_gps" remote="github" revision="oreo" />
+  <project path="hardware/qcom/bt" name="DerpRom/hardware_qcom_bt" groups="qcom,pdk" remote="github" revision="oreo" />
+  <project path="hardware/qcom/bt-caf" name="DerpRom/hardware_qcom_bt-caf" groups="qcom,pdk" remote="github" revision="oreo-caf" />
+  <project path="hardware/qcom/media" name="DerpRom/hardware_qcom_media" groups="qcom" remote="github" revision="oreo" />
+  <project path="hardware/qcom/media-caf" name="DerpRom/hardware_qcom_media-caf" groups="qcom" remote="github" revision="oreo-caf" />
+  <project path="hardware/qcom/keymaster" name="DerpRom/hardware_qcom_keymaster" groups="qcom,qcom_keymaster" remote="github" revision="oreo" />
+  <project path="hardware/qcom/wlan-caf" name="DerpRom/hardware_qcom_wlan-caf" groups="qcom_wlan,pdk" remote="github" revision="oreo-caf" />
+<project path="hardware/qcom/wlan" name="DerpRom/hardware_qcom_wlan" groups="qcom_wlan,pdk" remote="github" revision="oreo" />
+<project path="hardware/ril" name="DerpRom/hardware_ril" groups="pdk" remote="github" revision="oreo" />
+<project path="hardware/ril-caf" name="DerpRom/hardware_ril-caf" groups="pdk" remote="github" revision="oreo-caf" />
+</manifest>
