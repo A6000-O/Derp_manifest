@@ -51,4 +51,5 @@
   <remove-project name="platform/packages/apps/CarrierConfig" />
   <remove-project name="platform/packages/providers/MediaProvider" />
   <remove-project name="platform/packages/services/Telecomm" />
+  <remove-project name="platform/hardware/interfaces" />
 </manifest>
