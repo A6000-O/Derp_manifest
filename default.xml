@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="aosp"
-           fetch="https://android-review.googlesource.com/" />
+  <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org"/>
 
   <remote name="github"
            fetch="https://github.com/" />
 
-  <default revision="refs/tags/android-8.0.0_r4"
-           remote="aosp"
-           sync-j="4" />
+  <default remote="caf" revision="LA.UM.6.5.r1"/>
   
   <!-- AOSP packages -->
   <include name="aosp.xml" />
