@@ -52,5 +52,5 @@
   <remove-project name="platform/packages/providers/MediaProvider" />
   <remove-project name="platform/packages/services/Telecomm" />
   <remove-project name="platform/hardware/interfaces" />
-   <remove-project name="platform/libhardware_legacy" />
+   <remove-project name="platform/hardware/libhardware_legacy" />
 </manifest>
