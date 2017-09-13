@@ -49,4 +49,5 @@
   <remove-project name="platform/system/sepolicy" />
   <remove-project name="platform/system/vold" />
   <remove-project name="platform/packages/apps/CarrierConfig" />
+  <remove-project name="platform/packages/providers/MediaProvider" />
 </manifest>
