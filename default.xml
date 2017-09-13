@@ -9,7 +9,7 @@
   <default remote="caf" revision="LA.UM.6.5.r1"/>
   
   <!-- AOSP packages -->
-  <include name="aosp.xml" />
+  <include name="caf.xml" />
   <!-- Remove packages -->
   <include name="remove.xml" />
   <!-- Derp packages -->
